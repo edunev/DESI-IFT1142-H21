@@ -1,4 +1,4 @@
-Vous y avez 10 images d’bouffe avec leur noms. Dans un fichier JavaScript bouffe.js, vous allez créer un tableau tabBouffe ayant les informations suivantes pour chaque animal : nom, origine (indienne, americaine, italienne), catégorie (boisson, cote, repas).
+Créer une page HTML (bouffe.html) que va afficher le titre « Gestion des animaux ». Vous y avez 10 images d’bouffe avec leur noms. Dans un fichier JavaScript bouffe.js, vous allez créer un tableau tabBouffe ayant les informations suivantes pour chaque animal : nom, origine (indienne, americaine, italienne), catégorie (boisson, cote, repas).
 
 Votre application doit répondre aux questions suivantes: 
 
