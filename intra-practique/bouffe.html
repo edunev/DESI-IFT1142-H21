@@ -42,8 +42,10 @@
 			let chosen = countries[item.selectedIndex-1];
 			let arr = [];
 			// Pour obtenir les items avec l'origine choisi, ex: italienne -> alfredo, pizza margherita
-			for(i of items) {
-				if(items[i].origin == chosen) arr.push(items[i].name)
+			for(i = 0; i < items.length; i++) {
+				if(items[i].origin == chosen){
+					arr.push(items[i].name)
+				}
 			}
 			document.getElementById('countrySelect').innerHTML="<i>" + arr.join(', ')+"</i>"+ " sont des cuisines " + "<b>"+ chosen + "s</b>";			
 		}
@@ -62,11 +64,12 @@
 	        		<p id='photoSelect'></p>
 	      		</div>
 		  	</div>
+    	</div>
     	<div>
 		    <div>Afficher par l'origine:<select id="selOrigin" onchange="afficheOrigin(this);"></select></div>
 			<div class="card-food">
 				<p id='countrySelect'></p>
 			</div>
-    	<div>
+    	</div>
     </body>
 </html>
