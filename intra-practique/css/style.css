@@ -1,6 +1,6 @@
 .card-food {
 	display: flex;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
   	justify-content: space-around;
   	align-items: center;
   	align-content: center;
