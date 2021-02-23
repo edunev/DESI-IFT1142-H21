@@ -1,0 +1,10 @@
+/*
+	genere par: https://flexbox.buildwithreact.com/
+*/
+.nav-buttons {
+	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: space-around;
+  	align-items: center;
+  	align-content: center;
+}

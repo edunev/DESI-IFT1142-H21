@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<link rel="stylesheet" href="style.css">
+    <script>
+		const items = [
+			{'name':'Alfredo', 'origin':'Italienne', 'category':'Repas', 'photo':'img/alfredo.jpg'},
+			{'name':'Big Mac', 'origin':'Americaine', 'category':'Repas', 'photo':'img/bigmac.jpg'},
+			{'name':'Biryani', 'origin':'Indienne', 'category':'Repas', 'photo':'img/biryani.jpg'},
+			{'name':'Cari', 'origin':'Indienne', 'category':'Repas', 'photo':'img/cari.jpg'},
+			{'name':'Coke', 'origin':'Americaine', 'category':'Boisson', 'photo':'img/coke.jpg'},
+			{'name':'Coleslaw', 'origin':'Americaine', 'category':'Cote', 'photo':'img/coleslaw.jpg'},
+			{'name':'Hot Dog', 'origin':'Americaine', 'category':'Repas', 'photo':'img/hotdog.jpg'},
+			{'name':'Lassi mangue', 'origin':'Indienne', 'category':'Boisson', 'photo':'img/lassimangue.jpg'},
+			{'name':'Pizza Margherita', 'origin':'Italienne', 'category':'Repas', 'photo':'img/margheritapizza.jpg'},
+			{'name':'Samosas', 'origin':'Indienne', 'category':'Cote', 'photo':'img/samosa.jpg'}
+		];
+		afficheTab = () => {
+			let tableHeader = "<table><thead><tr><th>Nom</th><th>Origine</th><th>Category</th></tr></thead>"
+			let getNames = items.map(x => "<tr><td>" + x.name + '</td><td>' + x.origin + '</td><td>' + x.category + '</td></tr>')
+			document.getElementById("bord").innerHTML = tableHeader+"<tbody>"+getNames.join()+"</tbody></table>"
+			document.getElementById("footer").innerHTML = items.length
+		}
+		afficheTab2 = () => {
+			document.getElementById("bord").innerHTML = 'Travaux en cours'
+			document.getElementById("footer").innerHTML = ''
+		}
+	</script>
+    </head>
+    <body>
+    	<div class = 'nav-buttons'> 
+    		<button onclick="afficheTab();">Bouton 1</button>
+    		<button onclick="afficheTab2()"> Bouton 2 </button>
+    		<button> Bouton 3 </button>
+    		<button> Bouton 4 </button>
+    	</div>
+    	<div id="bord"/>
+    	<div id="footer"/>    
+    </body>
+</html>
